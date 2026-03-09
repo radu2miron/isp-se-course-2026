@@ -11,8 +11,6 @@ public class Main {
         Car car3 = new Car("Dacia", "Logan", "white", "678");
         Car car4 = car1; // assignment by reference
         Car car5 = new Car("BMW", "M5", "red", "123");
-
-
         car2 = null; // dereferenced object
 
         car1.start(); // instance method call
@@ -22,5 +20,7 @@ public class Main {
 
         int cars = Car.getCounter(); // static method call
         System.out.printf("There are %d cars\n", cars);
+
+        System.out.println("All cars have " + Car.NUMBER_OF_WHEELS + " wheels");
     }
 }
