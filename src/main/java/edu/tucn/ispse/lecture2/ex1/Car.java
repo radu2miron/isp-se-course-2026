@@ -19,7 +19,7 @@ public class Car {
         this.model = model;
         this.color = color;
         this.vin = vin;
-        counter++;
+        Car.counter++;
     }
 
     public Car(String brand, String model) {
