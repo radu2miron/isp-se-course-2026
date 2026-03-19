@@ -11,4 +11,9 @@ public class Student extends Person {
 //        super("a");
         System.out.println("Student constructor called"); // 3.
     }
+
+    @Override
+    public void breath() {
+        System.out.println("The student breathes");
+    }
 }

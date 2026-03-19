@@ -18,4 +18,8 @@ public class Person {
     // TODO: Create a new constructor that initializes 'name'
     //  Comment the current 'Person()' constructor.
     //  Check class 'Student'. Read the error message.
+
+    protected void breath() {
+        System.out.println("The person breathes");
+    }
 }
