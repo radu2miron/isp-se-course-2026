@@ -11,9 +11,9 @@ public class Person {
         System.out.println("Person constructor called"); // 2.
     }
 
-//    public Person(String name) {
-//        this.name = name;
-//    }
+    public Person(String name) {
+        this.name = name;
+    }
 
     // TODO: Create a new constructor that initializes 'name'
     //  Comment the current 'Person()' constructor.

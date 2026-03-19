@@ -15,11 +15,12 @@ public class TrickyEquals {
         Integer i3 = 100;
         Integer i4 = 100;
         Integer i5 = 128;
-        Integer i6 = 128;
+        Integer i6 = 128, i7=i6;
 
         System.out.println("i1 == i2? " + (i1 == i2));//true
         System.out.println("i3 == i4? " + (i3 == i4));//true
         System.out.println("i5 == i6? " + (i5 == i6));//true? nope
+        System.out.println("i6 == i7? " + (i6 == i7));//true
 
         // conclusion: the first 127 Integers are cached when the application starts
         // fix? always use equals() when comparing Integers
