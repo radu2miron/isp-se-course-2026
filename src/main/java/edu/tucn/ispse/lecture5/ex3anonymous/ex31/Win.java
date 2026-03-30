@@ -1,6 +1,8 @@
 package edu.tucn.ispse.lecture5.ex3anonymous.ex31;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Random;
 
 /**
@@ -19,15 +21,15 @@ public class Win extends JFrame {
 //        button.addActionListener(clickHandler);
 
         // ActionListener as an anonymous class
-//        button.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent actionEvent) {
-//                new Win();
-//            }
-//        });
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                new Win();
+            }
+        });
 
         // ActionListener as a lambda expression
-        button.addActionListener(e -> new Win());
+//        button.addActionListener(e -> new Win());
 
         this.add(button);
         this.setVisible(true);
