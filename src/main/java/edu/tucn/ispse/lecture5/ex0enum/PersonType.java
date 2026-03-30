@@ -9,6 +9,7 @@ public enum PersonType {
     AUXILIARY_EMPLOYEE(301);
 
     private int code;
+
     PersonType(int code) {
         this.code = code;
     }
