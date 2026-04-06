@@ -31,6 +31,7 @@ public class ZMainListIterator {
                         list.remove(person);
                     }
                 }
+                break;
 
             case 2:
                 Iterator<Person> iterator = list.iterator();

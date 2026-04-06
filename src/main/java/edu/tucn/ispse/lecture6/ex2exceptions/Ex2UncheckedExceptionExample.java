@@ -1,5 +1,8 @@
 package edu.tucn.ispse.lecture6.ex2exceptions;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @author <a href="mailto:radu.miro@aut.utcluj.ro">Radu Miron</a>
  */
@@ -16,10 +19,5 @@ public class Ex2UncheckedExceptionExample {
         // ArithmeticException
         int res = 5 / 0;
         System.out.println(res);
-
-        System.out.println("sdbhfa");
-        System.out.println("sdbhfa");
-        System.out.println("sdbhfa");
-        System.out.println("sdbhfa");
     }
 }

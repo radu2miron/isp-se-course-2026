@@ -38,5 +38,18 @@ public class Ex1MainHashSet {
         for (Integer i : uniqueIntegers) {
             System.out.print(i + " ");
         }
+
+        System.out.println();
+        System.out.println();
+
+        Set<String> stringSet = new HashSet<>();
+        stringSet.add("abcd");
+        stringSet.add("b");
+        stringSet.add("ab");
+        stringSet.add("xui");
+        stringSet.add("alhambra");
+
+        System.out.println("set of strings (no specific order):");
+        stringSet.forEach(System.out::println);
     }
 }
