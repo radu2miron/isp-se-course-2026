@@ -19,5 +19,6 @@ public class Main {
         };
 
         bicycle.move();
+        bicycle.changeSpeed();
     }
 }
