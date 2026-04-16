@@ -23,6 +23,8 @@ public class Ex1IntStreamExample {
                 .limit(5) // keep only the first 5 numbers
                 .forEach(System.out::println); // print each number
 
+        System.out.println();// leave an empty line between results
+
         Arrays.stream(array) // create an IntStream
                 .sorted() // sort numbers
                 .forEach(System.out::println); // print sorted numbers
