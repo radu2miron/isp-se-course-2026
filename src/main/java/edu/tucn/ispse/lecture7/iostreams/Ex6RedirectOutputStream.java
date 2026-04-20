@@ -8,4 +8,8 @@ public class Ex6RedirectOutputStream {
     public static void printSomething() {
         System.out.println("Something!");
     }
+
+    public static void main(String[] args) {
+        Ex6RedirectOutputStream.printSomething();
+    }
 }
