@@ -14,9 +14,9 @@ public class Ex1BinaryStreams {
 
         try (FileInputStream in = new FileInputStream(sourceFilePath);
              FileOutputStream out = new FileOutputStream(destinationFilePath)) {
-            int c;
-            while ((c = in.read()) != -1) { // ‘c’ is the int value of a byte
-                out.write(c);
+            int b;
+            while ((b = in.read()) != -1) { // ‘c’ is the int value of a byte
+                out.write(b);
             }
         } catch (IOException e) {
             e.printStackTrace();
