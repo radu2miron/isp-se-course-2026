@@ -35,6 +35,10 @@ public class Win extends JFrame implements KeyListener {
             myCharacter.setLocation(myCharacter.getX() - 5, myCharacter.getY());
         } else if (keyEvent.getKeyChar() == 'd' && myCharacter.getX() < 480) {
             myCharacter.setLocation(myCharacter.getX() + 5, myCharacter.getY());
+        } else if (keyEvent.getKeyChar() == 'w' && myCharacter.getY() > 0) {
+            myCharacter.setLocation(myCharacter.getX(), myCharacter.getY() - 5);
+        } else if (keyEvent.getKeyChar() == 's' && myCharacter.getY() < 480) {
+            myCharacter.setLocation(myCharacter.getX(), myCharacter.getY() + 5);
         }
     }
 

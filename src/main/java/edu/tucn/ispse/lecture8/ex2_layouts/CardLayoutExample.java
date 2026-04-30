@@ -22,15 +22,22 @@ public class CardLayoutExample {
         card1.setBackground(Color.WHITE);
         card1.add(new JLabel("Card 1"));
         card1.add(new JButton("Button 1"));
+        card1.add(new JButton("Button 1.1"));
 
         JPanel card2 = new JPanel();
         card2.setBackground(Color.YELLOW);
         card2.add(new JLabel("Card 2"));
         card2.add(new JButton("Button 2"));
 
+        JPanel card3 = new JPanel();
+        card3.setBackground(Color.RED);
+        card3.add(new JLabel("Card 3"));
+        card3.add(new JLabel("Aloha"));
+
         // Add cards to the JPanel using CardLayout
         cards.add(card1, "Card1");
         cards.add(card2, "Card2");
+        cards.add(card3, "Card3");
 
         // Add JPanel to the JFrame
         frame.getContentPane().add(cards);

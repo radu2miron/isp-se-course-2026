@@ -1,6 +1,7 @@
 package edu.tucn.ispse.lecture8.ex3_listeners.mouse_listener;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -27,10 +28,12 @@ class MouseListenerImpl implements MouseListener {
     @Override
     public void mouseEntered(MouseEvent e) {
         System.out.println("Mouse entered the button");
+        ((JButton) e.getSource()).setBackground(Color.GREEN);
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
         System.out.println("Mouse exited the button");
+        ((JButton) e.getSource()).setBackground(Color.LIGHT_GRAY);
     }
 }
