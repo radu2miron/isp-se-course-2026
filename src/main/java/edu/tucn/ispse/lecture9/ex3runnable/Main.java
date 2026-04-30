@@ -9,6 +9,6 @@ public class Main {
         MyRunnable r2 = new MyRunnable();
 
        r1.start();
-       r1.start();
+       r2.start();
     }
 }
