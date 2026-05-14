@@ -15,7 +15,7 @@ interface Container {
 }
 
 class NameRepository implements Container {
-    private String names[] = {"Robert", "John", "Julie", "Lora"};
+    private String[] names = {"Robert", "John", "Julie", "Lora"};
     private NameIterator nameIterator;
 
     @Override
