@@ -67,8 +67,8 @@ public class FileUtils {
     public static void main(String[] args) {
         String filePath = "testfiles/" + UUID.randomUUID() + ".txt"; // generate random file name
         FileUtils.generateFile(filePath); // generate the file
-        Map<String, Integer> results = FileUtils.processFile(filePath); // process the file
-
-        System.out.println("Char frequency: " + results);
+//        Map<String, Integer> results = FileUtils.processFile(filePath); // process the file
+//
+//        System.out.println("Char frequency: " + results);
     }
 }

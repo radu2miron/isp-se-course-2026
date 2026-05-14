@@ -3,7 +3,7 @@ package edu.tucn.ispse.lecture10.ex6joindeadlock;
 /**
  * @author <a href="mailto:radu.miro@aut.utcluj.ro">Radu Miron</a>
  */
-public class Main {
+public class JoinDeadlockMain {
     public static void main(String[] args) {
         Thread2 thread2 = new Thread2();
         Thread1 thread1 = new Thread1(thread2);

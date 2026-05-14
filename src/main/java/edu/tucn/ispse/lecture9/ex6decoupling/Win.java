@@ -40,18 +40,18 @@ public class Win extends JFrame {
         scrollableResults.setBounds(20, 100, 340, 300);
 
         processButton.addActionListener(ae -> { // 'Process File' click handler
-//            new Thread(() -> { // todo: uncomment this line
-            String filePath = filePathInput.getText();
-            Map<String, Integer> results = FileUtils.processFile(filePath);
-            StringBuilder builder = new StringBuilder();
-            builder.append(Thread.currentThread().getName() + " processed file: \n");
-            builder.append("    " + filePath + "\n");
-            builder.append("Results: \n");
-            results.forEach((k, v) ->
-                    builder.append("    " + k + ": " + v + "\n"));
-            builder.append("------------------------------------------\n\n");
-            resultsSection.append(builder.toString());
-//            }).start(); // todo: ... and this line to decouple the file processing on a new Thread
+            new Thread(() -> { // todo: uncomment this line
+                String filePath = filePathInput.getText();
+                Map<String, Integer> results = FileUtils.processFile(filePath);
+                StringBuilder builder = new StringBuilder();
+                builder.append(Thread.currentThread().getName() + " processed file: \n");
+                builder.append("    " + filePath + "\n");
+                builder.append("Results: \n");
+                results.forEach((k, v) ->
+                        builder.append("    " + k + ": " + v + "\n"));
+                builder.append("------------------------------------------\n\n");
+                resultsSection.append(builder.toString());
+            }).start(); // todo: ... and this line to decouple the file processing on a new Thread
         });
 
         add(filePathInput);

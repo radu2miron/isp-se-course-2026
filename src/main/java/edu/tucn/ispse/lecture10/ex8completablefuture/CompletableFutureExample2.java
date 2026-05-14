@@ -9,12 +9,22 @@ public class CompletableFutureExample2 {
     public static void main(String[] args) {
         // simulate fetching data from a web service asynchronously
         CompletableFuture<String> webServiceFuture = CompletableFuture.supplyAsync(() -> {
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             System.out.println("1. " + Thread.currentThread());
             return "Hello from web service!";
         });
 
         // simulate fetching data from a database asynchronously
         CompletableFuture<Integer> databaseFuture = CompletableFuture.supplyAsync(() -> {
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             System.out.println("2. " + Thread.currentThread());
             return 10;
         });

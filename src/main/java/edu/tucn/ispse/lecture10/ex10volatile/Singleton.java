@@ -5,7 +5,7 @@ package edu.tucn.ispse.lecture10.ex10volatile;
  */
 
 public class Singleton {
-    private static volatile Singleton instance;
+    private volatile static Singleton instance;
 
     private Singleton() {
     }

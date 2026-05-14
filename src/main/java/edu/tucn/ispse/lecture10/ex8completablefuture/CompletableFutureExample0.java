@@ -8,7 +8,14 @@ import java.util.concurrent.CompletableFuture;
  */
 public class CompletableFutureExample0 {
     public static void main(String[] args) {
-        CompletableFuture.supplyAsync(() -> new Random().nextInt(100)) // execute async
+        CompletableFuture.supplyAsync(() -> {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    return new Random().nextInt(100);
+                }) // execute async
                 .thenApply(r -> r * 3) // transform the result
                 .thenApply(r -> "<" + r + ">") // transform the result
                 .thenAccept(System.out::println) // print the result
